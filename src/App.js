@@ -44,10 +44,18 @@ function App() {
   return (
     <div className="App">
       <b>Enter Initial Price: </b>
-      <input onChange={(e) => setPrice(e.target.value)}></input>
+      <input value={price} onChange={(e) => setPrice(e.target.value)}></input>
       <br />
       <br />
-      <div>Price:{price} </div>
+      <div>
+        <b>Price:</b>
+        {price}{" "}
+      </div>
+      <br />
+      <div>
+        <b>Exponential Growth Factor:</b>
+        {exponent}{" "}
+      </div>
       <br />
       <div>
         <br />
